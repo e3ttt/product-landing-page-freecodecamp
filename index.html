@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      defer
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav-bar">
+        <div id="logo-container">
+          <a href="#">
+            <img
+              src="https://www.digiorgio.com.br/wp-content/uploads/2020/06/logoatualizadacelularBranco.png"
+              id="header-img"
+              alt="Logo from Di Giorgio"
+            />
+          </a>
+        </div>
+        <ul>
+          <li>
+            <a href="#quality" class="nav-link"
+              ><ion-icon name="musical-note-outline"></ion-icon> Check the
+              quality</a
+            >
+          </li>
+          <li>
+            <a href="#pricing" class="nav-link"
+              ><span><ion-icon name="cash-outline"></ion-icon></span> Pricing</a
+            >
+          </li>
+          <li>
+            <a href="#social-network" class="nav-link"
+              ><ion-icon name="wifi-outline"></ion-icon> Social Network</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <section id="hero">
+        <div>
+          <p id="hero-message">Making the best classical guitar since 1908</p>
+        </div>
+      </section>
+    </header>
+
+    <section id="quality">
+      <h2>Check the product quality</h2>
+      <p>
+        On the next video you can see the review (in portuguese) of the Guitar
+        Di Giorgio Nº 18 Student
+      </p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/QZLjnQKSqtM"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        id="video"
+      ></iframe>
+    </section>
+
+    <section id="pricing">
+      <h2>Check the prices</h2>
+      <div id="guitar-container">
+        <div class="card" id="beginner">
+          <h3>Initiant</h3>
+          <div class="image-container">
+            <img src="images/guitar1.png" alt="Beginnger guitar" />
+          </div>
+          <p>
+            The 2019 launch of Di Giorgio, the BEGINNING guitar, first line item
+            input. Classical acoustic guitar, Strings , Top and Bottom in
+            Linden, Scale with 19 rounded frets in Sonoguerin, Arm in Natowood.
+            Bilateral Tensor. Built in accordance with the Education Act Musical
+            for Elementary School.
+          </p>
+          <div class="price-container">
+            <span class="price">$399.99</span>
+          </div>
+          <div class="button-container">
+            <button class="buy">Buy now</button>
+          </div>
+        </div>
+        <div class="card" id="student">
+          <div id="recommend">Best Seller</div>
+          <h3>Student nº 18</h3>
+          <div class="image-container">
+            <img src="images/guitar2.png" alt="Beginnger guitar" />
+          </div>
+          <p>
+            One of the best-selling study guitars in Brazil, unmatched quality
+            in construction and sonority. Classical acoustic guitar, Strings
+            Nylon, Zebrano Case and Top Oregon Pine. Scale with 19 frets rounded
+            in Alpaca. Bilateral Tensor. Built in accordance with the Education
+            Act Musical for Elementary School.
+          </p>
+          <div class="price-container">
+            <span class="price">$499.99</span>
+          </div>
+          <div class="button-container">
+            <button class="buy">Buy now</button>
+          </div>
+        </div>
+        <div class="card" id="infantil">
+          <h3>For childs</h3>
+          <div class="image-container">
+            <img src="images/guitar3.png" alt="Beginnger guitar" />
+          </div>
+          <p>
+            Acoustic guitar in CHILD format, Strings of Nylon, Zebrano Case and
+            Top in Oregon Pine. Scale with 18 frets rounded in Alpaca. Bilateral
+            Tensor. Built in accordance with the Education Act Musical for
+            Elementary School.
+          </p>
+          <div class="price-container">
+            <span class="price">$299.99</span>
+          </div>
+          <div class="button-container">
+            <button class="buy">Buy now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Leave e-mail to receive news on our products</h2>
+      <form
+        id="form"
+        action="https://www.freecodecamp.com/email-submit"
+        method="form"
+      >
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Enter your Email"
+          required
+        /><input type="submit" id="submit" value="Submit" />
+      </form>
+    </section>
+  </body>
+
+  <footer id="social-network">
+    Social network in here <ion-icon name="logo-facebook"></ion-icon>
+    <ion-icon name="logo-instagram"></ion-icon>
+  </footer>
+</html>
